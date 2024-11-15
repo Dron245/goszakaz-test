@@ -225,6 +225,11 @@ time {
 		 display: none; 
 	}
 	&__item {
+		
+		
+	}
+
+	&__link {
 		transition: color 0.3s;
 		position: relative;
 		&::after {
@@ -243,10 +248,11 @@ time {
 				width: 100%;
 			}
 		}
-	}
-
-	&__link {
 		&_active {
+			color: $violet;
+			&::after {
+				width: 100%;
+			}
 		}
 	}
 	&__button {
