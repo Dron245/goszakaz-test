@@ -1,0 +1,51 @@
+.header {
+	min-height: 70px;
+	&__container {
+		max-height: 4.375rem;
+		display: flex;
+		align-items: center;
+		padding-block: 11px;
+	}
+
+	&__logo {
+		position: relative;
+		z-index: 4;
+	}
+
+	&__menu {
+		margin-left: auto;
+	}
+
+	&__phone {
+		margin-left: 40px;
+		color: $violet;
+		position: relative;
+		z-index: 4;
+	}
+
+	&__tel {
+		transition: color 0.3s;
+		&:hover{
+			color: #6c7dd8;
+		}
+	}
+}
+.menu {
+
+	&__icon {
+	}
+
+	&__body {
+	}
+
+	&__list {
+	}
+
+	&__item {
+	}
+
+	&__link {
+	}
+}
+.icon-menu {
+}

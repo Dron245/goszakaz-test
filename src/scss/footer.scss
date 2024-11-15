@@ -1,0 +1,40 @@
+.footer {
+	background: rgba(93, 113, 221, 0.05);
+	padding-block: 40px;
+	&__container {
+		display: grid;
+		justify-items: center;
+	}
+
+	&__menu {
+		display: flex;
+		
+		@include adaptiveValue("gap", 80, 40,0,1024, 480);
+		&:not(:last-child) {margin-bottom: toRem(64);}
+		@media (max-width:$mobileSmall){
+			flex-direction: column;
+			 gap: 20px; 
+		}
+	}
+
+	&__bottom {
+		@media (max-width:$mobile){
+			 text-wrap: balance;
+			 text-align: center; 
+		}
+	}
+}
+.footer .header {
+
+	&__logo {
+		&:not(:last-child) {margin-bottom: toRem(40);}
+	}
+}
+.footer .menu {
+	
+	&__item {
+	}
+
+	&__link {
+	}
+}
